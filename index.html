@@ -597,7 +597,7 @@
 
     <div style="background:#fff; border:1.5px solid var(--warm); border-radius:14px; padding:16px 20px; margin-top:12px; display:flex; justify-content:space-between; align-items:center;">
       <span style="font-family:'Playfair Display',serif; font-size:1rem; color:var(--green); font-weight:700;">Total Tiba</span>
-      <span id="checklist-count" style="font-family:'Playfair Display',serif; font-size:1.3rem; font-weight:700; color:var(--brown);">0 / 11</span>
+      <span id="checklist-count" style="font-family:'Playfair Display',serif; font-size:1.3rem; font-weight:700; color:var(--brown);">0 / 17</span>
     </div>
 
     <button onclick="resetChecklist()" style="margin-top:12px; width:100%; padding:12px; background:var(--warm); border:none; border-radius:10px; font-family:'Lato',sans-serif; font-weight:700; font-size:0.82rem; color:var(--brown); cursor:pointer; letter-spacing:0.5px;">🔄 Reset Checklist</button>
@@ -645,17 +645,23 @@
 <script>
   // ── CHECKLIST LOGISTIK ──
   const items = [
-    { id: 'beras',    emoji: '🌾', item: 'Beras 2 ltr',              dari: 'Kel. Inti' },
-    { id: 'lele',     emoji: '🐟', item: 'Lele 5 kg',                dari: 'Mang Ucup' },
-    { id: 'telor',    emoji: '🥚', item: 'Telor',                    dari: 'Ade' },
-    { id: 'ayam',     emoji: '🍗', item: 'Ayam ungkep 10 kg + sambal', dari: 'Upi Dani' },
-    { id: 'kerupuk',  emoji: '☕', item: 'Kerupuk + Kopi',            dari: 'Mang Dayat' },
-    { id: 'cungkring',emoji: '🍢', item: 'Cungkring',                dari: 'Mang Edi' },
-    { id: 'air',      emoji: '💧', item: 'Air minum',                dari: 'Aldi' },
-    { id: 'lalapan',  emoji: '🥬', item: 'Lalapan + Sayuran',        dari: 'Idan' },
-    { id: 'buah',     emoji: '🍎', item: 'Buah-buahan',              dari: 'Bi Yuni' },
-    { id: 'rebusan',  emoji: '🫕', item: 'Rebusan',                  dari: 'Bi Yayah' },
-    { id: 'baso',     emoji: '🍡', item: 'Baso',                     dari: 'Bi Lilis' },
+    { id: 'beras',    emoji: '🌾', item: 'Beras 2 ltr',                dari: 'Keluarga Inti' },
+    { id: 'bihun',    emoji: '🍜', item: 'Bihun',                      dari: 'Umi' },
+    { id: 'lele',     emoji: '🐟', item: 'Lele 5 kg',                  dari: 'Mang Ucup' },
+    { id: 'telor',    emoji: '🥚', item: 'Telur',                      dari: 'Ade' },
+    { id: 'ayam',     emoji: '🍗', item: 'Ayam ungkep 10 kg + sambal', dari: 'Upi & Dani' },
+    { id: 'kerupuk',  emoji: '🍘', item: 'Kerupuk + Kopi',             dari: 'Mang Dayat' },
+    { id: 'cungkring',emoji: '🍢', item: 'Cungkring',                  dari: 'Mang Edi' },
+    { id: 'air',      emoji: '💧', item: 'Air minum',                  dari: 'Aldi' },
+    { id: 'lalapan',  emoji: '🥬', item: 'Lalapan + Sayuran',          dari: 'Idan' },
+    { id: 'buah',     emoji: '🍎', item: 'Buah-buahan',                dari: 'Bi Yuni' },
+    { id: 'rebusan',  emoji: '🫕', item: 'Rebusan',                    dari: 'Bi Yayah' },
+    { id: 'baso',     emoji: '🍡', item: 'Baso',                       dari: 'Bi Lilis' },
+    { id: 'gulabolu', emoji: '🍰', item: 'Gula + Teh + Bolu',          dari: 'Teh Rian' },
+    { id: 'tahu',     emoji: '🟨', item: 'Tahu',                       dari: 'Wa Enah' },
+    { id: 'tempe',    emoji: '🟫', item: 'Tempe',                      dari: 'Pipit' },
+    { id: 'minyak',   emoji: '🫙', item: 'Minyak 5 ltr',               dari: 'Ririn' },
+    { id: 'dimsum',   emoji: '🥟', item: 'Dimsum',                     dari: 'Teguh' },
   ];
 
   const STORAGE_KEY = 'reuni-dawami-checklist';
